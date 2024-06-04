@@ -18,6 +18,7 @@ if(navClose){
         navMenu.classList.remove('show-menu')
     })
 }
+
 /*=============== REMOVE MENU MOBILE ===============*/
 const navLink = document.querySelectorAll('.nav__link')
 
@@ -66,6 +67,7 @@ const scrollUp = () =>{
 						: scrollUp.classList.remove('show-scroll')
 }
 window.addEventListener('scroll', scrollUp)
+
 // <!--==================== SCROLLREVEAL ANIMATION ====================-->
 const sr = ScrollReveal({
 	origin: 'top',
@@ -74,6 +76,7 @@ const sr = ScrollReveal({
 	delay: 400,
 	//reset: true // animation repeat
 })
+
 sr.reveal(`.home__data, .footer__content, .footer__logo, .footer__description`)
 sr.reveal(`.home__tree-1`, {origin: 'left', delay: 800})
 sr.reveal(`.home__tree-2`, {origin: 'left', delay: 800})
